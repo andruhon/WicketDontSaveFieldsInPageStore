@@ -7,16 +7,13 @@ import org.apache.wicket.protocol.http.WebApplication;
 public class QuickStartWicketApplication extends WebApplication {
 
     @Override
-    public Class<? extends WebPage> getHomePage()
-    {
+    public Class<? extends WebPage> getHomePage() {
         return HomePage.class;
     }
 
     @Override
-    public void init()
-    {
+    public void init() {
         super.init();
-        mountPage("/", HomePage.class);
         mountPage("/homepagestore", ViewHomePageStorePage.class);
     }
 

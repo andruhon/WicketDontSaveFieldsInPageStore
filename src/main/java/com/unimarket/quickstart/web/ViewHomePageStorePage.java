@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 public class ViewHomePageStorePage extends WebPage {
 
     public ViewHomePageStorePage() {
+        add(new Label("title", getString("title")));
         String sessionId = Session.get().getId();
         List<Page> pages;
         if (sessionId != null) {

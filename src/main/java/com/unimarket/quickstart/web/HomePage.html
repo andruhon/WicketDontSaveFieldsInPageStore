@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><wicket:message key="title" /></title>
+    <title wicket:id="title"></title>
 </head>
 <body>
 <form wicket:id="personalDetailsForm">
@@ -34,9 +34,16 @@
         <input wicket:id="taxNumberField"/>
     </div>
     <input wicket:id="password" type="password">
-    <button><wicket:message key="submit" /></button>
+    <button><wicket:message key="submit"/></button>
 </form>
-
-<a wicket:id="pageStoreLink"><wicket:message key="pageStoreLink" /></a>
+<a wicket:id="pageStoreLink">
+    <wicket:message key="pageStoreLink"/>
+</a>
+<div>
+    <label>
+        <wicket:message key="output"/>
+    </label>
+    <pre wicket:id="output"></pre>
+</div>
 </body>
 </html>
