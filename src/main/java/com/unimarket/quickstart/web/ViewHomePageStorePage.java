@@ -5,6 +5,7 @@ import org.apache.wicket.PageReference;
 import org.apache.wicket.Session;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.markup.html.link.ExternalLink;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.markup.repeater.RepeatingView;
@@ -45,6 +46,7 @@ public class ViewHomePageStorePage extends WebPage {
         }
 
         add(storeRecordsRepeater);
+        add(new BookmarkablePageLink<>("back", HomePage.class));
     }
 
     public static IPersistentPageStore getPersistentPageStore() {

@@ -31,12 +31,6 @@
             <artifactId>wicket-spring</artifactId>
             <version>9.0.0-M5</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.wicket</groupId>
-            <artifactId>wicket-devutils</artifactId>
-            <version>9.0.0-M5</version>
-        </dependency>
-
     </dependencies>
 
     <properties>
