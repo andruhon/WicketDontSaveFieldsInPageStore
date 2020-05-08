@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><wicket:message key="title"/></title>
+</head>
+<body>
+    <h1><wicket:message key="title"/></h1>
+    <p><wicket:message key="description"/></p>
+    <table>
+        <tr>
+            <th><wicket:message key="pageId"/></th>
+            <th><wicket:message key="path"/></th>
+            <th><wicket:message key="value"/></th>
+        </tr>
+        <tr wicket:id="storeRecords"></tr>
+    </table>
+
+</body>
+</html>

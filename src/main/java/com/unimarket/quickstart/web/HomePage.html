@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><wicket:message key="title" /></title>
+</head>
+<body>
+<form wicket:id="personalDetailsForm">
+    <div>
+        <label>
+            <wicket:message key="nicknameField"/>
+        </label>
+        <input wicket:id="nicknameField"/>
+    </div>
+    <div>
+        <label>
+            <wicket:message key="nameField"/>
+        </label>
+        <input wicket:id="nameField"/>
+    </div>
+    <div>
+        <label>
+            <wicket:message key="surnameField"/>
+        </label>
+        <input wicket:id="surnameField"/>
+    </div>
+    <div>
+        <label>
+            <wicket:message key="taxNumberField"/>
+        </label>
+        <input wicket:id="taxNumberField"/>
+    </div>
+    <input wicket:id="password" type="password">
+    <button><wicket:message key="submit" /></button>
+</form>
+
+<a wicket:id="pageStoreLink"><wicket:message key="pageStoreLink" /></a>
+</body>
+</html>
