@@ -35,7 +35,7 @@ public class SecureTextField<T> extends TextField<T> {
 
     @Override
     protected void onDetach() {
-        clearInput();
+        clearInput(); // This part wipes rawInput to make sure it's not serialized.
 
         if (getModel() != null) {
             getModel().setObject(null);

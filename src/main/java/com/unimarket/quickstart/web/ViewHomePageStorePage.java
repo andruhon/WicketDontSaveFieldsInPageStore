@@ -5,6 +5,7 @@ import org.apache.wicket.PageReference;
 import org.apache.wicket.Session;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.FormComponent;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.markup.html.link.ExternalLink;
 import org.apache.wicket.markup.html.panel.Panel;
@@ -86,6 +87,7 @@ public class ViewHomePageStorePage extends WebPage {
             add(new ExternalLink("pageId", model.map(p -> "/?"+p.getPageId()), model.map(Page::getPageId)));
             add(new Label("path", path));
             add(new Label("value", model.map(p -> p.get(path).getDefaultModel().getObject())));
+            add(new Label("rawInput", model.map(p -> ((FormComponent) p.get(path)).getRawInput())));
         }
 
     }
